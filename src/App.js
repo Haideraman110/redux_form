@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import DisplayData from "./component/DisplayData";
+import Forms from "./component/Forms";
+import SectionForm from "./component/SectionForm";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SectionForm id='container_main'>
+        <Forms />
+      </SectionForm>
+      <section>
+        <DisplayData/>
+      </section>
+
+
+    </>
   );
 }
 
