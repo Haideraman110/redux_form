@@ -10,7 +10,7 @@ function App() {
         <Forms />
       </SectionForm>
       <section>
-        <DisplayData/>
+        <DisplayData />
       </section>
 
 

@@ -19,7 +19,7 @@ const DisplayData = () => {
                 <tbody>
                     {
 
-                        data.map((val, i) => (
+                       data && data.map((val, i) => (
                             <tr key={i} style={{textAlign:'center'}}>
                                 <td>{val.fullname}</td>
                                 <td>{val.address}</td>
