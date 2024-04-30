@@ -42,7 +42,10 @@ const Forms = () => {
                 <InputsField label='Postal Code' type='text' name='postal' formdata={formdata.postal} placeholder='Postal Code' labelclass='form-label mb-2' className='form-control mb-3' onChange={(e) => handleChange(e)} />
                 <InputsField label='Phone Number' type='number' name='phone' formdata={formdata.phone} placeholder='Phone Number' labelclass='form-label mb-2' className='form-control mb-3' onChange={(e) => handleChange(e)} />
                 <InputsField label='Education' type='text' name='education' formdata={formdata.education} placeholder='Education' labelclass='form-label mb-2' className='form-control mb-3' onChange={(e) => handleChange(e)} />
-                <InputsField label='Passing Year' name='passing' formdata={formdata.passing} labelclass='form-label mb-2' className='form-select mb-3' onChange={(e) => handleChange(e)} />
+                <div className='select-size'>
+                    <InputsField label='Passing Year' name='passing' formdata={formdata.passing} labelclass='form-label mb-2' className='form-select mb-3' onChange={(e) => handleChange(e)} />
+
+                </div>
                 <button className='btn btn-danger w-100'>Submit</button>
 
             </form>

@@ -3,6 +3,9 @@
   padding:0px;
   box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,18 +23,31 @@ code {
   width: 60%;
   height: auto;
   background-color: rgb(19, 66, 85);
-  margin:5px auto;
-  padding: 20px;
+  margin:0.5rem auto;
+  padding:2rem;
   color: white;
   box-shadow: 4px 6px 7px rgba(0,0,0,0.5);
-  border-radius: 10px;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+input[type='text']{
+  font-size: 1.6rem;
+}
+input[type='number']{
+  font-size: 1.6rem;
+}
+.btn{
+  font-size: 1.6rem;
+}
+thead,td{
+  font-size: 1.6rem;
 }
 section{
   width: 60%;
   height: auto;
-  margin:15px auto;
-  padding: 20px;
-  border-radius: 10px;
+  margin:1.5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
   color: white;
   background-color: rgb(19, 66, 85);
   box-shadow: 4px 6px 7px rgba(0,0,0,0.5);
@@ -40,7 +56,47 @@ section{
   display: flex;
   justify-content: space-between;
   background-color: rgb(61, 142, 174);
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 4px 6px 7px rgba(0,0,0,0.5);
+}
+.select-size select{
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width:600px){
+  html{
+    font-size: 62.5%;
+  }
+  input[type='text']{
+    font-size: 1.4rem;
+  }
+  input[type='number']{
+    font-size: 1.4rem;
+  }
+  .btn{
+    font-size: 1.4rem;
+  }
+  thead,td{
+    font-size: 1.2rem;
+  }
+  #container_main{
+    width: 100%;
+  }
+  section{
+    width: 100%;
+  }
+  table{
+   font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width:601px) and (max-width:900px){
+  
+  #container_main{
+    width: 100%;
+  }
+  section{
+    width: 100%;
+  }
+
 }
